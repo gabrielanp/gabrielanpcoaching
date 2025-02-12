@@ -1,0 +1,275 @@
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ff007f;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    max-width: 100px;
+}
+
+.brand-name {
+    margin-top: 5px; /* Adjust as needed for spacing */
+    font-size: 1.5em;
+    color: white;
+    font-family: 'Montserrat', Arial, sans-serif;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px; /* Add gap between nav items */
+    margin-top: 10px; /* Adjust as needed for spacing */
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.hero {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    background-image: url('DSC_00121.JPG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);  /* Black with 50% opacity */
+    z-index: 1;
+}
+
+.hero-overlay {
+    position: relative;
+    z-index: 2;  /* Ensure content is above the overlay */
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 90%;
+}
+
+
+.hero-overlay h1 {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 3em;
+    margin-bottom: 0px;
+}
+
+.hero-overlay h2 {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 1.5em;
+    margin-top: 0px;
+}
+
+.hero-overlay button {
+    background-color: #ff007f;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+    z-index: 3;  /* Ensure the button is above the overlay */
+}
+
+.hero-overlay button:hover {
+    background-color: #e60073;
+}
+
+.schedule, .contact-form {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.calendar-container {
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    border: 5px solid #ff007f;
+}
+
+/* Contact Form Styles */
+.contact-form {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    text-align: center;
+    color: #ff007f;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.form-group textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background-color: #ff007f;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #e60073;
+}
+.about {
+    padding: 60px 20px;
+    background-color: #ffccde;  /* Light pink background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-content {
+    max-width: 800px;  /* Restrict the width of the content */
+    width: 100%;
+}
+
+.about-text {
+    padding: 20px;
+    background-color: #ff007f;  /* Pink background */
+    color: white;
+    border-radius: 8px;
+    text-align: center;  /* Center the text */
+}
+
+.about-text h2 {
+    font-size: 2.5em;
+    color: white;
+}
+
+.about-text p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: white;
+}
+
+footer {
+    
+    text-align: center; /* Center the text */
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+    }
+    
+    .hero-overlay {
+        max-width: 100%;  /* Ensure the overlay scales correctly */
+        padding: 10px;
+    }
+    
+    .hero-overlay h1 {
+        font-size: 2em;
+    }
+
+    .hero-overlay h2 {
+        font-size: 1.2em;
+    }
+
+    .hero-overlay button {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    .contact-form {
+        padding: 20px;
+    }
+
+    .calendar-container {
+        max-width: 100%;
+        border: none;
+    }
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-text {
+        padding: 20px;
+    }
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabby Yogi</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            
+            <img src="gabbyyogilogo.png" alt="Gabby Yogi Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#schedule">Schedule</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="hero" id="about1" >
+    <div class="hero-overlay">
+        <h1>Gabby Yogi</h1>
+        <h2>-aligning the spirit with the sun-</h2>
+        <button onclick="contactMe()">Get in Contact</button>
+    </div>
+    </section>
+
+    <section class="schedule" id="schedule">
+        <h2>Class Schedule</h2>
+        <div class="calendar-container">
+            <iframe src="https://calendar.google.com/calendar/embed?src=5fe11ba36cc4baf46f9caa6b11dcf00442d7955d181b09543729cbd7df24b40f%40group.calendar.google.com&ctz=Europe%2FVienna&color=%23ff007f" style="border: none;" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>About Gabby Yogi</h2>
+                <p>Gabby Yogi is a soul project born from my passion for yoga and a deep desire to share its transformative power with like-minded individuals. It is a journey of mindfulness, balance, and self-discovery that I hope to embark on with others who seek peace and holistic well-being. Through personalized yoga sessions and a supportive community, Gabby Yogi aims to create a sanctuary where everyone can grow, heal, and thrive together. I am looking forward to growing a circle of like-minded people by volunteering my time and skills to better the life of the community.</p>
+            </div>
+            
+        </div>
+    </section>
+    
+    <section class="contact-form" id="contact">
+        <h2>Contact Me</h2>
+        <form action="https://formspree.io/f/manwndpn" method="POST">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Gabby Yogi. All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
